@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    font-family: 'Helvetica';
+    color: white;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%; 
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-size: 120px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+h2, p , h3{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+}
+
+h2 span {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.yellow-h3 {
+    color: #ffc74d;
+    opacity: 1;
+    font-size: 35px;
+}
+
+/* PARAGRAPHES */
+p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.p-bg {
+    background-color: #0042fc;
+    background-size: fit-content;
+}
+
+.high-p {
+    font-size: 35px;
+}
+
+.quote {
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+span {
+    width: fit-content;
+    text-align: center;
+    padding: 0 0.5em;
+}
+
+
+h1:hover, h2:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 60px;
+    animation: color-change 5s infinite;
+}
+  @keyframes color-change {
+    0% { color: white; }
+    50% { color: #ffc74d; }
+    100% { color: white; }
+  }
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+
+/* Advice */
+.advice-top, .advice-bottom {
+    position: fixed;
+    opacity: 0.20;
+    font-size: 35px;
+    animation: vertical-shaking 1.5s infinite;
+}
+.advice-bottom {
+    bottom: 5vh;
+}
+
+.advice-top {
+    top: 5vh;
+}
+
+
+@keyframes vertical-shaking {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+
+img {
+    width: 20%;
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.5);
+    border: 4px solid #0042fc;
+}
