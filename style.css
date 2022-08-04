@@ -134,6 +134,8 @@ section {
     width: 40%;
     overflow: scroll;
     transition: all 0.3s ease-in-out;
+    border: 2px solid #0042fc;
+    border-bottom: 0;
 }
 
 .scrollable-div:hover {
