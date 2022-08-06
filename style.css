@@ -138,6 +138,10 @@ section {
     border-bottom: 0;
 }
 
+.scrollable-div::-webkit-scrollbar {
+    display: none;
+}
+
 .scrollable-div:hover {
     transform: scale(1.3);
 }
